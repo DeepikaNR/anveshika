@@ -95,6 +95,6 @@ def process_harvest():
 if __name__ == '__main__':
 
     #print process_harvest()
-    url, file_string = get_file_content('/Users/deepikaravi/yojana/anveshika/harvest/kannada/dir_1/156.txt')
+    url, file_string = get_file_content('anveshika/harvest/kannada/156.txt')
     print_unicode_iterable(process_pipeline(file_string, 'kn'))
 
