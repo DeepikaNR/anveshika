@@ -12,7 +12,7 @@ Functionality:
 Indexing is done as a continuous background job(Step 4). When a user enters a query, only steps 1-4 are carried out.
 
 (The HTML frontend and Kannada lemmatizer are not included. 
-Refer for the web crawler code.)
+Refer https://github.com/DeepikaNR/crawler for the web crawler code.)
 
 Indexing inspired by https://github.com/logicx24/Text-Search-Engine. Thanks to Akash for presenting the big picture.
 
