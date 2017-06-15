@@ -1,7 +1,7 @@
 # anveshika
-Bi-lingual web search engine
+Bi-lingual web search engine(Python, NLTK, Cassandra)
 
-Functionality:
+File organization:
 
 1. flask_server.py : Extract the user query from the HTML form and fire a search session.
 2. query_main.py : Detects the query language. Accordingly, carries out linguistic pre-processing of the query. Invokes a free text query search and returns the ranked URLs.
