@@ -1,7 +1,7 @@
 # anveshika
 Bi-lingual web search engine
 
-**Functionality:
+Functionality:
 
 1. flask_server.py : Extract the user query from the HTML form and fire a search session.
 2. query_main.py : Detects the query language. Accordingly, carries out linguistic pre-processing of the query. Invokes a free text query search and returns the ranked URLs.
@@ -13,4 +13,6 @@ Indexing is done as a continuous background job(Step 4). When a user enters a qu
 
 (The HTML frontend and Kannada lemmatizer are not included. 
 Refer for the web crawler code.)
+
+Indexing inspired by https://github.com/logicx24/Text-Search-Engine. Thanks to Akash for presenting the big picture.
 
