@@ -81,39 +81,4 @@ if __name__ == '__main__':
     print "execution time: %d seconds %d microseconds" %(tdiff.seconds, tdiff.microseconds)
 
 
-    """
-    try:
-        d = Document.get(url='http://karnataka.wiki')
-        print d.url
-        print d.tf
-
-
-    except DoesNotExist:
-        print None
-
-    # update: adds the given keys/values to the columns, creating new entries
-    # if they didn’t exist, and overwriting old ones if they did
-    #Document.objects(url='http://karnataka.wiki').update(tf__update={'1': 1})
-
-
-    Document.create(url='www.india.org', tf={'bharath' : 0.86, 'mera': 0.29,})
-    Document.create(url='eng_oak', tf={'bharath': 0.86, 'mera': 0.29, })
-    Document.create(url='www.kar.in', tf={'kan': 0.86, 'nanna': 0.29, })
-    Term.create(term='insurance', inverted_index={'www.india.org':[1,2], 'eng_oak' : [67,90]})
-
-    t1 = Term.get(term='insurance')
-    d1 = t1.inverted_index
-    d1['ravi'] = [1030]
-    Term.objects(term='insurance').update(inverted_index=d1)
-
-    df = len(t1.inverted_index.keys())
-    N = Document.objects.count()
-    print N
-    idf = math.log10(N / df)
-    Term.objects(term='insurance').update(df = df, idf = idf)
-    """
-
-
-
-
-    #User.objects(id=1).update(name="Steve")
+    
